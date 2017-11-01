@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent"
+android:paddingBottom="0dp"
+android:paddingLeft="0dp"
+android:paddingRight="0dp"
+android:paddingTop="0dp"
+tools:context="com.example.ritika.androidcalculator.MainActivity">
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="7"
+    android:id="@+id/number7"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_above="@+id/number4"
+    android:layout_alignParentStart="true"
+    android:layout_toStartOf="@+id/number5"
+    android:width="180dp" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DEL"
+    android:id="@+id/delete"
+    android:background="#757575"
+    android:textSize="20dp"
+    android:textColor="#ffffff"
+    android:height="80dp"
+    android:width="75dp"
+    android:layout_alignTop="@+id/number9"
+    android:layout_toStartOf="@+id/blue" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="8"
+    android:id="@+id/number8"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_above="@+id/number5"
+    android:layout_toEndOf="@+id/number7"
+    android:layout_gravity="center_vertical"
+    android:width="145dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="9"
+    android:id="@+id/number9"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_alignTop="@+id/number8"
+    android:layout_toEndOf="@+id/number8"
+    android:width="92dp"
+    android:layout_toStartOf="@id/delete" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="4"
+    android:id="@+id/number4"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_above="@+id/number1"
+    android:layout_alignParentStart="true"
+    android:width="180dp"
+    />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="5"
+    android:id="@+id/number5"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_alignTop="@+id/number4"
+    android:layout_toEndOf="@+id/number4"
+    android:layout_gravity="center_vertical"
+    android:width="145dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="6"
+    android:id="@+id/number6"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_below="@+id/number9"
+    android:layout_alignStart="@+id/number9"
+    android:width="92dp"
+    android:layout_toEndOf="@id/number5"
+    android:layout_toStartOf="@id/delete" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1"
+    android:id="@+id/number1"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_above="@+id/dot"
+    android:layout_alignParentStart="true"
+    android:width="180dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2"
+    android:id="@+id/number2"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_below="@+id/number5"
+    android:layout_toEndOf="@+id/number1"
+    android:width="145dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3"
+    android:id="@+id/number3"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_below="@+id/number6"
+    android:layout_alignStart="@+id/number6"
+    android:width="92dp"
+    android:layout_toEndOf="@id/number2"
+    android:layout_toStartOf="@id/delete" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="."
+    android:id="@+id/dot"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:width="180dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0"
+    android:id="@+id/number0"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_below="@+id/number2"
+    android:layout_toEndOf="@+id/number1"
+    android:width="145dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="="
+    android:id="@+id/equalsto"
+    android:background="#FF333232"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/abc_dialog_padding_material"
+    android:height="100dp"
+    android:layout_below="@+id/number3"
+    android:layout_alignStart="@+id/number3"
+    android:width="95dp"
+    android:layout_toEndOf="@id/number0"
+    android:layout_toStartOf="@id/delete" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="/"
+    android:id="@+id/divide"
+    android:background="#757575"
+    android:textSize="20dp"
+    android:textColor="#ffffff"
+    android:height="80dp"
+    android:width="75dp"
+    android:layout_below="@+id/delete"
+    android:layout_alignStart="@+id/delete" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="x"
+    android:id="@+id/multiply"
+    android:background="#757575"
+    android:textSize="20dp"
+    android:textColor="#ffffff"
+    android:height="80dp"
+    android:clickable="false"
+    android:capitalize="none"
+    android:width="75dp"
+    android:layout_below="@+id/divide"
+    android:layout_alignStart="@+id/divide" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="-"
+    android:id="@+id/subtract"
+    android:background="#757575"
+    android:textSize="20dp"
+    android:textColor="#ffffff"
+    android:height="80dp"
+    android:width="75dp"
+    android:layout_below="@+id/multiply"
+    android:layout_alignStart="@+id/multiply" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+"
+    android:id="@+id/add"
+    android:background="#757575"
+    android:textSize="20dp"
+    android:textColor="#ffffff"
+    android:height="80dp"
+    android:width="75dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignStart="@+id/subtract" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/blue"
+    android:src="#0af88d"
+    android:minHeight="@dimen/abc_action_bar_stacked_tab_max_width"
+    android:height="360dp"
+    android:minWidth="@dimen/abc_select_dialog_padding_start_material"
+    android:layout_alignParentBottom="true"
+    android:layout_alignTop="@+id/delete"
+    android:layout_alignParentEnd="true" />
+
+<HorizontalScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:layout_alignParentRight="true"
+    android:fillViewport="false"
+    android:layout_marginTop="100dp"
+    >
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextBox1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:minHeight="80dp"
+        android:background="#f9f8f8"
+        android:editable="false"
+        android:textAlignment="textEnd"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:textSize="85dp"
+        android:height="160dp"
+        android:longClickable="true"
+
+        android:textIsSelectable="true"
+
+        />
+</HorizontalScrollView>
+
+
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/TextBox2"
+    android:layout_marginTop="265dp"
+    android:layout_marginRight="10dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignStart="@+id/number9"
+    android:background="#f9f8f8"
+    android:editable="false"
+    android:height="150dp"
+    android:layout_alignParentStart="false"
+    android:textAlignment="textEnd"
+    android:singleLine="true"
+    android:minHeight="@dimen/abc_action_bar_stacked_max_height"
+    android:layout_toStartOf="@id/number9"
+    android:scrollHorizontally="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="DEG"
+    android:id="@+id/textView"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_alignParentStart="true"
+    android:textColor="#000000"
+    android:textSize="@dimen/abc_action_bar_content_inset_material" />
+
+</RelativeLayout>
